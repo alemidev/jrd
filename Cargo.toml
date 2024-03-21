@@ -1,0 +1,19 @@
+[package]
+name = "jrd"
+version = "0.1.0"
+edition = "2021"
+authors = [ "alemi <me@alemi.dev>" ]
+description = "json resource descriptor, as specified by https://www.packetizer.com/json/jrd/"
+license = "MIT"
+keywords = ["json", "jrd", "web", "serialize"]
+repository = "https://git.alemi.dev/jrd.git"
+readme = "README.md"
+
+[lib]
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+serde_json = "1"
